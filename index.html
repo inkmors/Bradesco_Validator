@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador Bradesco</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="assets/bradesco-logo.png" type="image/x-icon">
+</head>
+<body">
+    <div class="div-all">
+        <div class="div-all-border">
+            <div class="align-title">
+                <img src="assets/bradesco-logo.png" width="60px" alt="logo-bradesco">
+                <h1>Verificador de agência Bradesco</h1>
+            </div>
+            <div class="sub-div-align">
+                <div class="align-itens">
+                    <p>Primeiro Dígito</p>
+                    <input oninput="count_characters()" id="one-digit" type="number">
+                </div>
+    
+                <div class="align-itens">
+                    <p>Segundo Dígito</p>
+                    <input oninput="count_characters()" id="two-digit" type="number">
+                </div>
+    
+                <div class="align-itens">
+                    <p>Terceiro Dígito</p>
+                    <input oninput="count_characters()" id="three-digit" type="number">
+                </div>
+    
+                <div class="align-itens">
+                    <p>Quarto Dígito</p>
+                    <input oninput="count_characters()" id="four-digit" type="number">
+                </div>
+    
+                <div class="align-itens">
+                    <p>Dígito Validador</p>
+                    <div class="box-digit">
+                        <span id="validator-digit">?</span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="btns-align">
+                <button onclick="multiply_digits()">Validar</button>
+                <button onclick="resetPage()">Resetar</button>
+            </div>
+            <span id="span-message"></span>
+            <span id="span-message-error"></span>
+        </div>
+    </div>
+
+    <p>By Morusu Developer</p>
+
+    <script src="scripts/app_validator_bank.js"></script>
+</body>
+</html>

@@ -1,0 +1,646 @@
+@font-face {
+    font-family: Jetbrains;
+    src: url(assets/JetBrainsMono-Regular.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'JetBrains Mono';
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(98,35,35);
+    background: radial-gradient(circle, rgba(98,35,35,1) 0%, rgba(0,0,0,1) 100%);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body p{
+    text-align: center;
+    margin-top: 2rem;
+    color: white;
+}
+
+.div-all{
+    width: 70rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    gap: 3rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.div-all-border{
+    width: 68rem;
+    height: 38rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    gap: 4rem;
+    border: 2px solid red;
+}
+
+.align-title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.div-all h1{
+    font-size: 35px;
+    color: rgb(223, 22, 22);
+}
+
+.sub-div-align{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+#span-message{
+    display: none;
+    font-size: 20px;
+    color: green;
+}
+
+#span-message-error{
+    display: none;
+    font-size: 20px;
+    color: red;
+}
+
+.align-itens{
+    width: 4rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.align-itens p{
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+}
+
+#one-digit{
+    color: rgb(255, 0, 0);
+    padding-left: 10px;
+    font-size: 30px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10px;
+    outline: none;
+    border: 3px solid red;
+}
+
+#two-digit{
+    color: rgb(255, 0, 0);
+    padding-left: 10px;
+    font-size: 30px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10px;
+    outline: none;
+    border: 3px solid red;
+}
+
+#three-digit{
+    padding-left: 10px;
+    font-size: 30px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10px;
+    border: none;
+    color: rgb(255, 0, 0);
+    outline: none;
+    border: 3px solid red;
+}   
+
+#four-digit{
+    padding-left: 10px;
+    font-size: 30px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10px;
+    border: none;
+    color: rgb(255, 0, 0);
+    outline: none;
+    border: 3px solid red;
+}
+
+.box-digit{
+    height: 3.5rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(197, 22, 22);
+    border-radius: 10px;
+}
+
+.box-digit span{
+    font-size: 30px;
+}
+
+.btns-align{
+    display: flex;
+    gap: 2rem;
+}
+
+.btns-align button{
+    width: 8rem;
+    height: 3rem;
+    border-radius: 10px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    background-color: rgb(197, 22, 22);
+    cursor: pointer;
+    transition: 0.6s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 15px;
+}
+
+.btns-align button:hover{
+    background-color: rgb(88, 14, 14);
+    color: rgb(202, 202, 202);
+    transition: 0.6s;
+}
+
+@media screen and (max-width: 1024px) {
+    .div-all{
+        width: 50rem;
+        height: 32rem;
+    }
+    
+    .div-all-border{
+        width: 48rem;
+        height: 30rem;
+    }
+
+    .align-title{
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .align-title img{
+        width: 40px;
+    }
+
+    .align-title h1{
+        font-size:  30px;
+    }
+}
+
+@media screen and (max-width: 932px) {
+    body p{
+        margin-top: 1rem;
+    }
+    .div-all{
+        width: 50rem;
+        height: 22rem;
+    }
+    
+    .div-all-border{
+        width: 48rem;
+        height: 20rem;
+        gap: 1.5rem;  
+    }    
+
+    .align-title{
+        width: 100%;
+    }
+
+    .align-title img{
+        width: 30px;
+    }
+    
+    .div-all h1{
+        font-size: 20px;
+    }
+
+    .sub-div-align{
+        gap: 2rem;
+    }
+    
+    #span-message{
+        font-size: 15px;
+    }
+    
+    #span-message-error{
+        font-size: 15px;
+    }
+
+    .align-itens p{
+        font-size: 14px;
+    }
+    
+    #one-digit{
+        font-size: 25px;
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    #two-digit{
+        font-size: 25px;
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    #three-digit{
+        font-size: 25px;
+        width: 2rem;
+        height: 2rem;
+    }   
+    
+    #four-digit{
+        font-size: 25px;
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    .box-digit{
+        height: 2.5rem;
+        width: 3rem;
+    }
+    
+    .box-digit span{
+        font-size: 30px;
+    }
+    
+    .btns-align button{
+        width: 3.5rem;
+        height: 2.5rem;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 896px) {
+
+    body p{
+        margin-top: 1rem;
+    }
+    .div-all{
+        width: 50rem;
+        height: 24rem;
+    }
+    
+    .div-all-border{
+        width: 48rem;
+        height: 22rem;
+        gap: 2rem;  
+    }    
+
+    .align-title{
+        width: 100%;
+    }
+
+    .align-title img{
+        width: 35px;
+    }
+}
+
+@media screen and (max-width: 853px) {
+    .div-all{
+        width: 50rem;
+        height: 35rem;
+    }
+    
+    .div-all-border{
+        width: 48rem;
+        height: 33rem;
+        gap: 3.5rem;
+    }
+
+    .align-title img{
+        width: 70px;
+    }
+    
+    .div-all h1{
+        font-size: 30px;
+    }
+
+    #span-message{
+        font-size: 20px;
+    }
+    
+    #span-message-error{
+        font-size: 20px;
+    }
+
+    .align-itens p{
+        font-size: 15px;
+    }
+    
+    #one-digit{
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    #two-digit{
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    #three-digit{
+        width: 3rem;
+        height: 3rem;
+    }   
+    
+    #four-digit{
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    .box-digit{
+        height: 3.5rem;
+        width: 4rem;
+    }
+    
+    .btns-align button{
+        width: 6rem;
+        height: 3rem;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 844px) {
+
+    body p{
+        margin-top: 1rem;
+    }
+
+    .div-all{
+        width: 50rem;
+        height: 20rem;
+    }
+    
+    .div-all-border{
+        width: 48rem;
+        height: 18rem;
+        gap: 1rem;  
+    }    
+
+    .align-title{
+        width: 100%;
+    }
+
+    .align-title img{
+        width: 30px;
+    }
+    
+    .div-all h1{
+        font-size: 15px;
+    }
+
+    .sub-div-align{
+        gap: 2rem;
+    }
+    
+    #span-message{
+        font-size: 15px;
+    }
+    
+    #span-message-error{
+        font-size: 15px;
+    }
+    
+    .align-itens{
+        width: 4rem;
+        gap: 1rem;
+    }
+
+    .align-itens p{
+        font-size: 14px;
+    }
+    
+    #one-digit{
+        font-size: 30px;
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    #two-digit{
+        font-size: 30px;
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    #three-digit{
+        font-size: 30px;
+        width: 2rem;
+        height: 2rem;
+    }   
+    
+    #four-digit{
+        font-size: 30px;
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    .box-digit{
+        height: 2.5rem;
+        width: 3rem;
+    }
+    
+    .box-digit span{
+        font-size: 28px;
+    }
+    
+    .btns-align button{
+        width: 3.5rem;
+        height: 2.5rem;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .div-all{
+        width: 50rem;
+        height: 35rem;
+    }
+    
+    .div-all-border{
+        width: 48rem;
+        height: 33rem;
+        gap: 3.5rem;
+    }
+
+    .align-title img{
+        width: 70px;
+    }
+    
+    .div-all h1{
+        font-size: 30px;
+    }
+
+    #span-message{
+        font-size: 20px;
+    }
+    
+    #span-message-error{
+        font-size: 20px;
+    }
+
+    .align-itens p{
+        font-size: 15px;
+    }
+    
+    #one-digit{
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    #two-digit{
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    #three-digit{
+        width: 3rem;
+        height: 3rem;
+    }   
+    
+    #four-digit{
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    .box-digit{
+        height: 3.5rem;
+        width: 4rem;
+    }
+    
+    .btns-align button{
+        width: 4.5rem;
+        height: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .div-all{
+        width: 22rem;
+        height: 37rem;
+        gap: 3rem;
+    }
+
+    .div-all-border{
+        width: 20rem;
+        height: 35rem;
+        gap: 2.5rem;
+    }
+
+    .align-title{
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .align-title img{
+        width: 40px;
+    }
+    
+    .div-all h1{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .sub-div-align{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: auto auto auto;
+        gap: 2rem;
+    }
+    
+    #span-message{
+        font-size: 12px;
+    }
+    
+    #span-message-error{
+        font-size: 12px;
+    }
+    
+    .align-itens{
+        width: 4rem;
+        gap: 1rem;
+    }
+
+    .align-itens p{
+        font-size: 14px;
+    }
+    
+    #one-digit{
+        font-size: 25px;
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    #two-digit{
+        font-size: 25px;
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    #three-digit{
+        font-size: 25px;
+        width: 2rem;
+        height: 2rem;
+    }   
+    
+    #four-digit{
+        font-size: 25px;
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    .box-digit{
+        height: 2.5rem;
+        width: 3rem;
+    }
+    
+    .box-digit span{
+        font-size: 30px;
+    }
+    
+    .btns-align button{
+        width: 5rem;
+        height: 3rem;
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .div-all{
+        width: 21rem;
+        height: 35rem;
+    }
+    
+    .div-all-border{
+        width: 19rem;
+        height: 33rem;
+        gap: 2rem;
+    }
+
+    #span-message{
+        font-size: 12px;
+    }
+
+    #span-message-error{
+        font-size: 12px;
+    }
+}
